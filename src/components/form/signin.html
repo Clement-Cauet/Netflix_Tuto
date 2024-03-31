@@ -1,0 +1,20 @@
+<form method="post" id="signForm" class="formulaire">
+    <label for="username">Nom d'utilisateur:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Mot de passe:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="password">Confirmation:</label>
+    <input type="password" id="verify_password" name="verify_password" required>
+
+    <div class="admin-checkbox">
+        <label for="admin">Admin:</label>
+        <input type="checkbox" id="admin" name="admin">
+    </div>
+    
+    <div class="form-button">
+        <button type="button" id="loginButton"><a href="login.php">Se connecter</a></button>
+        <input type="submit" name="register" value="Créer un compte">
+    </div>
+</form>

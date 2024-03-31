@@ -1,0 +1,175 @@
+/* CSS VARIABLES */
+:root {
+--primary   :#212121;
+--light     :#F3F3F3;
+--dark      :#686868;
+
+--primary-second   :#353535;
+}
+
+/* GLOBAL STYLES */
+html, body {
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #e50914;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: center;
+    border: 1px solid white;
+}
+
+/* MAIN CONTIANER */
+.main-container {
+    padding: 20px 100px 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: var(--primary-second);
+    border-radius: 10px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
+
+.grid-description {
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    overflow-y: auto; 
+    max-height: 200px;
+}
+
+.grid-info {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.grid-info > p {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* FORM */
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transform: translateY(30%);
+}
+
+.formulaire label {
+    display: block;
+    margin: 10px 0;
+}
+
+.formulaire input[type="text"], .formulaire input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulaire input[type="submit"], .formulaire button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--primary-second);
+    color: var(--light);
+    cursor: pointer;
+}
+
+.form-button {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-button button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-button input[type="submit"]:hover, .form-button button:hover {
+    background-color: var(--light);
+    color: var(--primary-second);
+}
+
+.admin-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-checkbox input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.dasboard-content {
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: var(--primary-second);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-dashboard {
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: 200px;
+}
