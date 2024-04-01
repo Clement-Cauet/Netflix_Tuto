@@ -46,13 +46,7 @@ require_once '../components/menu.html';
         <div class="main-container">
             <div class="header">
                 <h1>SUN CARRY</h1>
-                <form method="GET" class="search-form" action="">
-                    <input type="text" name="search" class="search-input">
-                    <i class="fa fa-search"></i>
-                    <a href="movie.php" class="search-reset">
-                        <i class="fa-solid fa-xmark"></i>
-                    </a>
-                </form>
+                <?php require_once '../components/form/searchbar.html'; ?>
             </div>
 
             <div class="grid-container">

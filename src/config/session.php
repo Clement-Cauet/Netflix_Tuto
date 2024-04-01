@@ -3,7 +3,7 @@
     session_start();
     //session_destroy();
 
-    define('ROOT_PATH', 'C:/wamp64/www/Sun_carry/');
+    define('ROOT_PATH', 'C:/wamp64/www/Netflix_Tuto/');
 
     include ROOT_PATH . "src/database/database.php";
     include ROOT_PATH . "src/classes/user.php";
